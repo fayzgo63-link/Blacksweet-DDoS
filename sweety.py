@@ -92,7 +92,7 @@ class httpth1(threading.Thread):
                 randomized_url = url + "?" + genstr(random.randint(3, 10))
                 requests.get(randomized_url, headers=headers)
                 u += 1
-                print(f"\033[38;5;220m[Request.get] \033[36m{url} \033[32mThreads \033[37m"+str(u)+"\033[0m")
+                print(f"\033[38;5;220m[Request.get] \033[36m{url} \033[32mthreads: \033[37m"+str(u)+"\033[0m")
             except requests.exceptions.ConnectionError:
                 print("\033[48;5;3m\033[30" +(url)+ "\033[0m \033[31mrequests error!\033[0m")
                 pass
