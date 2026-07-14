@@ -10,22 +10,6 @@ import colorama
 
 # Colors
 class bcolors:
-    NBlack = "\033[38;5;0m  \033[0m"
-    NRed = "\033[38;5;1m  \033[0m"
-    NGreen = "\033[38;5;2m  \033[0m"
-    NYellow = "\033[38;5;3m  \033[0m"
-    NBlue = "\033[38;5;4m  \033[0m"
-    NMagenta = "\033[38;5;5m  \033[0m"
-    NCyan = "\033[38;5;6m  \033[0m"
-    NWhite =  "\033[38;5;7m  \033[0m"
-    BBlack = "\033[48;5;0m  \033[0m"
-    BRed =  "\033[48;5;1m  \033[0m"
-    BGreen = "\033[48;5;2m  \033[0m"
-    BYellow = "\033[48;5;3m  \033[0m"
-    BBlue = "\033[48;5;4m  \033[0m"
-    BMagenta = "\033[48;5;5m  \033[0m"
-    BCyan = "\033[48;5;6m  \033[0m"
-    BWhite = "\033[48;5;7m  \033[0m"
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
     OKCYAN = '\033[96m'
@@ -42,7 +26,7 @@ class bcolors:
     MAGENTA = "\033[35m"
     CYAN    = "\033[36m"
     WHITE   = "\033[37m"
-
+    RESET   = "\033[0m"
  
 if os.name == 'nt':
     os.system("cls")
@@ -58,7 +42,8 @@ else:
 """)
 print(f"\033[92m╔{'═' * 69}╗")
 print(f"\033[92m║\033[48;5;1m\033[97m  Design: Kunfayz weh{' ' * 47} \033[0m\033[92m║")
-print(f"\033[92m║\033[48;5;1m\033[97m  Garis keras pembela Palestina{' ' * 37} \033[0m\033[92m║")
+print(f"\033[92m|\033[48;5;1m\033[97m  Author: Zblack 313 {' ' * 47} \033[0m\033[92m|")
+print(f"\033[92m║\033[48;5;1m\033[97m  BIRRUH BIDDAM NAFDHIKA YA AQSA {' ' * 37} \033[0m\033[92m║")
 print(f"\033[92m╚{'═' * 69}╝")
 
 print("\033[48;5;3m\033[30m••⟩⟩ BLACK ARMY INTERNAL SCRIPT \033[0m")
@@ -79,7 +64,7 @@ def useragent():
     global headers
     headers.append("Mozilla/5.0 (Windows Phone 10.0; Android 6.0.1; Microsoft; RM-1152)")
     headers.append("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)")
-    headers.append("Mozilla/5.0 (Linux; Android 6.0.1; SM-G920V Build/MMB29K) AppleWebKit/537.36")
+    headers.append("Mozilla/5.0 (Linux;  Android 6.0.1; SM-G920V Build/MMB29K) AppleWebKit/537.36")
     headers.append("Mozilla/5.0 (Windows; U; Windows NT 5.0; es-ES; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3")
     headers.append("Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0")
     headers.append("Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/36.0  Mobile/15E148 Safari/605.1.15")
